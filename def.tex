@@ -22,12 +22,18 @@
 \ifcsmacro{theorem}{}{
   \newtheorem{theorem}{Theorem}[]
 }
+\ifcsmacro{remark}{}{
+  \newtheorem{remark}{Remark}[]
+}
 
 % Make := and =:
 \usepackage{mathtools}
 \mathtoolsset{centercolon}
 \newcommand{\defeq}{\mathrel{:\mkern-0.25mu=}}
 \newcommand{\eqdef}{\mathrel{=\mkern-0.25mu:}}
+
+\newcommand\defeqq{\stackrel{\mathclap{\normalfont\mbox{def}}}{=}}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -50,6 +56,7 @@
 \newcommand{\bbS}{\ensuremath{\mathbb{S}}}
 
 \newcommand{\Rplus}{\ensuremath{\mathbb{R}_+}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
 
 
 \newcommand{\cA}{\ensuremath{\mathcal{A}}}
