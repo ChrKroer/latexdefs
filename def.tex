@@ -5,25 +5,31 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{etoolbox}
 \ifcsmacro{assumption}{}{
-  \newtheorem{assumption}{Assumption}[]
+	\newtheorem{assumption}{Assumption}[]
 }
 \ifcsmacro{corollary}{}{
-  \newtheorem{corollary}{Corollary}[]
+	\newtheorem{corollary}{Corollary}[]
 }
 \ifcsmacro{definition}{}{
-  \newtheorem{definition}{Definition}[]
+	\newtheorem{definition}{Definition}[]
+}
+\ifcsmacro{example}{}{
+	\newtheorem{example}{Example}[]
+}
+\ifcsmacro{fact}{}{
+	\newtheorem{fact}{Fact}[]
 }
 \ifcsmacro{lemma}{}{
-  \newtheorem{lemma}{Lemma}[]
+	\newtheorem{lemma}{Lemma}[]
 }
 \ifcsmacro{proposition}{}{
-  \newtheorem{proposition}{Proposition}[]
-}
-\ifcsmacro{theorem}{}{
-  \newtheorem{theorem}{Theorem}[]
+	\newtheorem{proposition}{Proposition}[]
 }
 \ifcsmacro{remark}{}{
-  \newtheorem{remark}{Remark}[]
+	\newtheorem{remark}{Remark}[]
+}
+\ifcsmacro{theorem}{}{
+	\newtheorem{theorem}{Theorem}[]
 }
 
 % Make := and =:
@@ -113,211 +119,211 @@
 \newcommand{\be}{\begin{eqnarray}}
 \newcommand{\ee}[1]{\label{#1}\end{eqnarray}}
 \newcommand{\nn}{\nonumber \\}
-\newcommand{\ese}{\end{eqnarray*}}
-\newcommand{\bse}{\begin{eqnarray*}}
-\def\beq{\begin{equation}}
-\def\eeq{\end{equation}}
-\def\Bbb#1{{\bf #1}}
-\def\eqnum#1{\eqno (#1)}
-\def\fnote#1{\footnote}
-
-\def\ra{\rangle}
-\def\la{\langle}
-\def\ul{\underline}
-\def\*{{{\LARGE\bf $^*$}}}
-\def\P{{{\LARGE\bf $^+$}}}
-\def\PP{{{\LARGE\bf $^{++}$}}}
-
-\def\P{{\textsf\bf P\,}}
-\def\NP{{\textsf\bf NP\,}}
-
-\def\N{{\mathbb{N}}}
-\def\R{{\mathbb{R}}}
-\def\Z{{\mathbb{Z}}}
-
-\def\mones{{\mathbf{1}}}
-
-\def\bA{{\mathbf{A}}}
-\def\bB{{\mathbf{B}}}
-\def\bC{{\mathbf{C}}}
-\def\bD{{\mathbf{D}}}
-\def\bE{{\mathbf{E}}}
-\def\bF{{\mathbf{F}}}
-\def\bG{{\mathbf{G}}}
-\def\bH{{\mathbf{H}}}
-\def\bI{{\mathbf{I}}}
-\def\bJ{{\mathbf{J}}}
-\def\bK{{\mathbf{K}}}
-\def\bL{{\mathbf{L}}}
-\def\bM{{\mathbf{M}}}
-\def\bN{{\mathbf{N}}}
-\def\bO{{\mathbf{O}}}
-\def\bP{{\mathbf{P}}}
-\def\bQ{{\mathbf{Q}}}
-\def\bR{{\mathbf{R}}}
-\def\bS{{\mathbf{S}}}
-\def\bT{{\mathbf{T}}}
-\def\bU{{\mathbf{U}}}
-\def\bV{{\mathbf{V}}}
-\def\bW{{\mathbf{W}}}
-\def\bX{{\mathbf{X}}}
-\def\bY{{\mathbf{Y}}}
-\def\bZ{{\mathbf{Z}}}
-
-
-
-\def\cA{{\cal A}}
-\def\cB{{\cal B}}
-\def\cC{{\cal C}}
-\def\cD{{\cal D}}
-\def\cE{{\cal E}}
-\def\cF{{\cal F}}
-\def\cG{{\cal G}}
-\def\cH{{\cal H}}
-
-\def\cJ{{\cal J}}
-\def\cK{{\cal K}}
-\def\cL{{\cal L}}
-\def\cM{{\cal M}}
-\def\cN{{\cal N}}
-\def\cO{{\cal O}}
-\def\cP{{\cal P}}
-\def\cQ{{\cal Q}}
-\def\cR{{\cal R}}
-\def\cS{{\cal S}}
-\def\cT{{\cal T}}
-\def\cU{{\cal U}}
-\def\cV{{\cal V}}
-\def\cW{{\cal W}}
-\def\cX{{\cal X}}
-\def\cY{{\cal Y}}
-
-
-\def\Ic{{\overline{I}}}
-
-%\def\e{\mathop{{\rm e}}}
-%\def\i{{\mathop{z}}}
-\def\nrm{\mathop{{\parallel}}}
-\def\vrt{\mathop{\,\mid}\,}
-\def\eqbd{\colon =}
-
-\def\Opt{{\hbox{\rm Opt}}}
-\def\Argmin{\mathop{\rm Argmin}}
-\def\argmin{\mathop{\rm argmin}}
-\def\Argmax{\mathop{\rm Argmax}}
-\def\argmax{{\mathop{\rm argmax}}}
-
-\def\Sad{{\mathop{\rm Sad}}}
-\def\Residual{\mathop{{\rm Residual}}}
-\def\DualityGap{{\hbox{\rm DualityGap}}}
-
-\def\sign{\mathop{{\rm sign}}}
-\def\sgn {{\rm \,sgn}}
-\def\const{{\hbox{\rm const}}}
-\def\Card{{{\mathop{\rm Card}}}}
-\def\card{\mathop{\rm card}}
-\def\data{\hbox{\rm data}}
-\def\Supp{{\hbox{\rm Supp}}}
-\def\nnz{{\hbox{\rm nnz}}}
-\def\Size{\mathop{{\rm Size}}}
-\def\size{\mathop{{\rm Size}}}
-\def\Sz{\mathop{{\hbox{\sl Size}}}}
-\def\Diam{\mathop{{\rm Diam}}}
-\def\AvDiam{\mathop{{\rm AvDiam}}}
-\def\Vl{\mathop{{\hbox{\sl Vol}}}}
-\def\Vol{\mathop{{\rm Vol}}}
-\def\vol{\mathop{{\rm vol}}}
-
-\def\rank{\mathop{\rm Rank}}
-\def\Diag{\mathop{{\rm Diag}}}
-\def\diag{{\rm diag}}
-\def\trace{{\rm Trace}}
-\def\Tr{\mathop{{\rm Tr}}}
-\def\Det{\mathop{{\rm Det}}}
-\def\Fr{{\hbox{\scriptsize Fr}}}
-\def\Arrow{{\hbox{\rm Arrow}}}
-\def\Col{{\hbox{\rm Col}}}
-\def\Row{{\hbox{\rm Row}}}
-
-\def\Prob{{\hbox{\rm Prob}}}
-\def\Cov{{\hbox{\rm Cov}}}
-\def\uniform{\mathop{\rm uniform}}
-
-\def\dim{\mathop{{\rm dim}\,}}
-\def\codim{\mathop{{\rm codim\,}}}
-\def\Lin{{\mathop{\rm Lin}}}
-\def\lin{{\mathop{\rm lin}}}
-\def\Aff{{\mathop{\rm Aff}}}
-\def\aff{{\mathop{\rm aff}}}
-\def\vspan{{\mathop{\rm span}}}
-\def\intt{{\mathop{\rm int}\,}}
-\def\inter{\mathop{{\rm int}}}
-\def\rint{{\mathop{\rm rint\,}}}
-\def\ri{{\mathop{\rm ri}\,}}
-\def\partialri{\mathop{\partial_{\rm ri}}}
-\def\cl{{\mathop{\rm cl}\,}}
-\def\closure{{\rm cl}}
-\def\bd{{\mathop{\rm bd}\,}}
-\def\rbd{{\mathop{\rm rbd}\,}}
-
-
-\def\Dom{\mathop{{\rm Dom}}}
-\def\dom{{\mathop{\rm dom}}}
-\def\Epi{{\mathop{\rm Epi}}}
-\def\epi{{\rm epi}}
-
-\def\Ker{\mathop{{\rm Ker}}}
-\def\ker{\mathop{{\rm Ker}}}
-\def\Image{\mathop{{\rm Im}}}
-\def\Conv{{\mathop{\rm Conv}}}
-\def\conv{\mathop{{\rm Conv}}}
-\def\co{\mathop{{\rm Conv}}}
-\def\Cone{{\mathop{{\rm Cone\,}}}}
-\def\cone{\mathop{{\rm Cone}}}
-\def\Ext{{\mathop{\rm Ext}}}
-\def\Extr{{\mathop{\rm Extr}}}
-\def\Rec{{\mathop{{\rm Rec}}}}
-\def\rec{{\mathop{{\rm Rec}}}}
-
-\def\dist{\mathop{{\rm dist}}}
-\def\log{\mathop{{\rm log}}}
-\def\asin{{\hbox{\rm asin}}}
-\def\Polar{{\mathop{{\rm Polar\,}}}}
-\def\ch{{\mathop{\rm ch\,}}}
-\def\arc{{\mathop{\rm arc\,}}}
-\def\EllIn{{\mathop{\rm EllIn}}}
-\def\GDA{{\rm \ ArD\ }}
-\def\GDS{{\rm \ StD\ }}
-\def\lev{{\mathop{\rm lev}}}
-
-\def\CE{\mathop{{\hbox{\sl CircEll}}}}
-\def\CS{\mathop{{\hbox{\sl CircSimp}}}}
-\def\IE{\mathop{{\hbox{\sl InscrEll}}}}
-\def\Compl{\mathop{{\rm Compl}}}
-\def\Accur{\mathop{{\rm Accur}}}
-\def\mes{\mathop{{\rm mes}}}
-\def\EllOut{\mathop{{\rm EllOut}}}
-\def\Ell{\mathop{{\sl Ell}}}
-\def\InnerRad{\mathop{{\rm InnerRad}}}
-\def\Mom{\mathop{\rm Mom}}
-\def\Loss{{\hbox{\rm Loss}}}
-
-
-\def\huh{\hbox{\vrule width 2pt height 8pt depth 2pt}}
-
-\def\rdiamondsuit{{\color{red}$\diamondsuit$}}
-\def\blacksquare{\hbox{\vrule width 4pt height 4pt depth 0pt}}
-\def\square{\hbox{\vrule\vbox{\hrule\phantom{o}\hrule}\vrule}}
-
-
-\def\nr{\par \noindent}
-\def\pn{\par\noindent}
-\def\qr{\qquad\cr}
-\def\fig{\epsfxsize=220pt\epsfysize=140pt\epsffile}
-\def\mypictsmall{\epsfxsize=120pt\epsfysize=120pt\epsffile}
-\def\mypictvsmall{\epsfxsize=90pt\epsfysize=90pt\epsffile}
-
-\def\bStnu{\bS^{\widetilde{\nu}}}
-\def\bStnup{\bS^{\widetilde{\nu}}_+}
-
-
+	\newcommand{\ese}{\end{eqnarray*}}
+	\newcommand{\bse}{\begin{eqnarray*}}
+	\def\beq{\begin{equation}}
+	\def\eeq{\end{equation}}
+	\def\Bbb#1{{\bf #1}}
+	\def\eqnum#1{\eqno (#1)}
+	\def\fnote#1{\footnote}
+	
+	\def\ra{\rangle}
+	\def\la{\langle}
+	\def\ul{\underline}
+	\def\*{{{\LARGE\bf $^*$}}}
+	\def\P{{{\LARGE\bf $^+$}}}
+	\def\PP{{{\LARGE\bf $^{++}$}}}
+	
+	\def\P{{\textsf\bf P\,}}
+	\def\NP{{\textsf\bf NP\,}}
+	
+	\def\N{{\mathbb{N}}}
+	\def\R{{\mathbb{R}}}
+	\def\Z{{\mathbb{Z}}}
+	
+	\def\mones{{\mathbf{1}}}
+	
+	\def\bA{{\mathbf{A}}}
+	\def\bB{{\mathbf{B}}}
+	\def\bC{{\mathbf{C}}}
+	\def\bD{{\mathbf{D}}}
+	\def\bE{{\mathbf{E}}}
+	\def\bF{{\mathbf{F}}}
+	\def\bG{{\mathbf{G}}}
+	\def\bH{{\mathbf{H}}}
+	\def\bI{{\mathbf{I}}}
+	\def\bJ{{\mathbf{J}}}
+	\def\bK{{\mathbf{K}}}
+	\def\bL{{\mathbf{L}}}
+	\def\bM{{\mathbf{M}}}
+	\def\bN{{\mathbf{N}}}
+	\def\bO{{\mathbf{O}}}
+	\def\bP{{\mathbf{P}}}
+	\def\bQ{{\mathbf{Q}}}
+	\def\bR{{\mathbf{R}}}
+	\def\bS{{\mathbf{S}}}
+	\def\bT{{\mathbf{T}}}
+	\def\bU{{\mathbf{U}}}
+	\def\bV{{\mathbf{V}}}
+	\def\bW{{\mathbf{W}}}
+	\def\bX{{\mathbf{X}}}
+	\def\bY{{\mathbf{Y}}}
+	\def\bZ{{\mathbf{Z}}}
+	
+	
+	
+	\def\cA{{\cal A}}
+	\def\cB{{\cal B}}
+	\def\cC{{\cal C}}
+	\def\cD{{\cal D}}
+	\def\cE{{\cal E}}
+	\def\cF{{\cal F}}
+	\def\cG{{\cal G}}
+	\def\cH{{\cal H}}
+	
+	\def\cJ{{\cal J}}
+	\def\cK{{\cal K}}
+	\def\cL{{\cal L}}
+	\def\cM{{\cal M}}
+	\def\cN{{\cal N}}
+	\def\cO{{\cal O}}
+	\def\cP{{\cal P}}
+	\def\cQ{{\cal Q}}
+	\def\cR{{\cal R}}
+	\def\cS{{\cal S}}
+	\def\cT{{\cal T}}
+	\def\cU{{\cal U}}
+	\def\cV{{\cal V}}
+	\def\cW{{\cal W}}
+	\def\cX{{\cal X}}
+	\def\cY{{\cal Y}}
+	
+	
+	\def\Ic{{\overline{I}}}
+	
+	%\def\e{\mathop{{\rm e}}}
+	%\def\i{{\mathop{z}}}
+	\def\nrm{\mathop{{\parallel}}}
+	\def\vrt{\mathop{\,\mid}\,}
+	\def\eqbd{\colon =}
+	
+	\def\Opt{{\hbox{\rm Opt}}}
+	\def\Argmin{\mathop{\rm Argmin}}
+	\def\argmin{\mathop{\rm argmin}}
+	\def\Argmax{\mathop{\rm Argmax}}
+	\def\argmax{{\mathop{\rm argmax}}}
+	
+	\def\Sad{{\mathop{\rm Sad}}}
+	\def\Residual{\mathop{{\rm Residual}}}
+	\def\DualityGap{{\hbox{\rm DualityGap}}}
+	
+	\def\sign{\mathop{{\rm sign}}}
+	\def\sgn {{\rm \,sgn}}
+	\def\const{{\hbox{\rm const}}}
+	\def\Card{{{\mathop{\rm Card}}}}
+	\def\card{\mathop{\rm card}}
+	\def\data{\hbox{\rm data}}
+	\def\Supp{{\hbox{\rm Supp}}}
+	\def\nnz{{\hbox{\rm nnz}}}
+	\def\Size{\mathop{{\rm Size}}}
+	\def\size{\mathop{{\rm Size}}}
+	\def\Sz{\mathop{{\hbox{\sl Size}}}}
+	\def\Diam{\mathop{{\rm Diam}}}
+	\def\AvDiam{\mathop{{\rm AvDiam}}}
+	\def\Vl{\mathop{{\hbox{\sl Vol}}}}
+	\def\Vol{\mathop{{\rm Vol}}}
+	\def\vol{\mathop{{\rm vol}}}
+	
+	\def\rank{\mathop{\rm Rank}}
+	\def\Diag{\mathop{{\rm Diag}}}
+	\def\diag{{\rm diag}}
+	\def\trace{{\rm Trace}}
+	\def\Tr{\mathop{{\rm Tr}}}
+	\def\Det{\mathop{{\rm Det}}}
+	\def\Fr{{\hbox{\scriptsize Fr}}}
+	\def\Arrow{{\hbox{\rm Arrow}}}
+	\def\Col{{\hbox{\rm Col}}}
+	\def\Row{{\hbox{\rm Row}}}
+	
+	\def\Prob{{\hbox{\rm Prob}}}
+	\def\Cov{{\hbox{\rm Cov}}}
+	\def\uniform{\mathop{\rm uniform}}
+	
+	\def\dim{\mathop{{\rm dim}\,}}
+	\def\codim{\mathop{{\rm codim\,}}}
+	\def\Lin{{\mathop{\rm Lin}}}
+	\def\lin{{\mathop{\rm lin}}}
+	\def\Aff{{\mathop{\rm Aff}}}
+	\def\aff{{\mathop{\rm aff}}}
+	\def\vspan{{\mathop{\rm span}}}
+	\def\intt{{\mathop{\rm int}\,}}
+	\def\inter{\mathop{{\rm int}}}
+	\def\rint{{\mathop{\rm rint\,}}}
+	\def\ri{{\mathop{\rm ri}\,}}
+	\def\partialri{\mathop{\partial_{\rm ri}}}
+	\def\cl{{\mathop{\rm cl}\,}}
+	\def\closure{{\rm cl}}
+	\def\bd{{\mathop{\rm bd}\,}}
+	\def\rbd{{\mathop{\rm rbd}\,}}
+	
+	
+	\def\Dom{\mathop{{\rm Dom}}}
+	\def\dom{{\mathop{\rm dom}}}
+	\def\Epi{{\mathop{\rm Epi}}}
+	\def\epi{{\rm epi}}
+	
+	\def\Ker{\mathop{{\rm Ker}}}
+	\def\ker{\mathop{{\rm Ker}}}
+	\def\Image{\mathop{{\rm Im}}}
+	\def\Conv{{\mathop{\rm Conv}}}
+	\def\conv{\mathop{{\rm Conv}}}
+	\def\co{\mathop{{\rm Conv}}}
+	\def\Cone{{\mathop{{\rm Cone\,}}}}
+	\def\cone{\mathop{{\rm Cone}}}
+	\def\Ext{{\mathop{\rm Ext}}}
+	\def\Extr{{\mathop{\rm Extr}}}
+	\def\Rec{{\mathop{{\rm Rec}}}}
+	\def\rec{{\mathop{{\rm Rec}}}}
+	
+	\def\dist{\mathop{{\rm dist}}}
+	\def\log{\mathop{{\rm log}}}
+	\def\asin{{\hbox{\rm asin}}}
+	\def\Polar{{\mathop{{\rm Polar\,}}}}
+	\def\ch{{\mathop{\rm ch\,}}}
+	\def\arc{{\mathop{\rm arc\,}}}
+	\def\EllIn{{\mathop{\rm EllIn}}}
+	\def\GDA{{\rm \ ArD\ }}
+	\def\GDS{{\rm \ StD\ }}
+	\def\lev{{\mathop{\rm lev}}}
+	
+	\def\CE{\mathop{{\hbox{\sl CircEll}}}}
+	\def\CS{\mathop{{\hbox{\sl CircSimp}}}}
+	\def\IE{\mathop{{\hbox{\sl InscrEll}}}}
+	\def\Compl{\mathop{{\rm Compl}}}
+	\def\Accur{\mathop{{\rm Accur}}}
+	\def\mes{\mathop{{\rm mes}}}
+	\def\EllOut{\mathop{{\rm EllOut}}}
+	\def\Ell{\mathop{{\sl Ell}}}
+	\def\InnerRad{\mathop{{\rm InnerRad}}}
+	\def\Mom{\mathop{\rm Mom}}
+	\def\Loss{{\hbox{\rm Loss}}}
+	
+	
+	\def\huh{\hbox{\vrule width 2pt height 8pt depth 2pt}}
+	
+	\def\rdiamondsuit{{\color{red}$\diamondsuit$}}
+	\def\blacksquare{\hbox{\vrule width 4pt height 4pt depth 0pt}}
+	\def\square{\hbox{\vrule\vbox{\hrule\phantom{o}\hrule}\vrule}}
+	
+	
+	\def\nr{\par \noindent}
+	\def\pn{\par\noindent}
+	\def\qr{\qquad\cr}
+	\def\fig{\epsfxsize=220pt\epsfysize=140pt\epsffile}
+	\def\mypictsmall{\epsfxsize=120pt\epsfysize=120pt\epsffile}
+	\def\mypictvsmall{\epsfxsize=90pt\epsfysize=90pt\epsffile}
+	
+	\def\bStnu{\bS^{\widetilde{\nu}}}
+	\def\bStnup{\bS^{\widetilde{\nu}}_+}
+	
+	
