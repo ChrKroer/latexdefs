@@ -6,7 +6,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{etoolbox}
 \usepackage{amsmath}
-\usepackage{amsthm}
+\@ifpackageloaded{amsthm}{}{\usepackage{amsthm}}
 \ifcsmacro{assumption}{}{
 	\newtheorem{assumption}{Assumption}[]
 }
@@ -39,7 +39,7 @@
 }
 
 % Make := and =:
-\usepackage{mathtools}
+\@ifpackageloaded{mathtools}{}{\usepackage{mathtools}}
 \mathtoolsset{centercolon}
 \newcommand{\defeq}{\mathrel{:\mkern-0.25mu=}}
 \newcommand{\eqdef}{\mathrel{=\mkern-0.25mu:}}
@@ -63,6 +63,7 @@
 \newcommand{\bbE}{\ensuremath{\mathbb{E}}}
 \newcommand{\bbI}{\ensuremath{\mathbb{I}}}
 \newcommand{\bbN}{\ensuremath{\mathbb{N}}}
+\newcommand{\bbP}{\ensuremath{\mathbb{P}}}
 \newcommand{\bbR}{\ensuremath{\mathbb{R}}}
 \newcommand{\bbS}{\ensuremath{\mathbb{S}}}
 
@@ -91,9 +92,10 @@
 \newcommand{\mccfr}{MCCFR}
 \newcommand{\egt}{EGT}
 \newcommand{\mdescent}{MD}
+\newcommand{\mprox}{MP}
 \newcommand{\smprox}{SMP}
 
-\def\prox{\mathop{\rm Prox}\nolimits}
+\def\prox{\mathop{\rm Prox}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Game theory definitions
@@ -108,8 +110,17 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Statistics definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\E}{\Bbb{E}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Misc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{color}
+\@ifpackageloaded{color}{}{\usepackage{color}}
 \newcommand{\todo}[1]{{\color{blue} #1}}
 
 
@@ -178,31 +189,31 @@
 	
 	
 	
-	\def\cA{{\mathcal A}}
-	\def\cB{{\mathcal B}}
-	\def\cC{{\mathcal C}}
-	\def\cD{{\mathcal D}}
-	\def\cE{{\mathcal E}}
-	\def\cF{{\mathcal F}}
-	\def\cG{{\mathcal G}}
-	\def\cH{{\mathcal H}}
+	\def\cA{{\cal A}}
+	\def\cB{{\cal B}}
+	\def\cC{{\cal C}}
+	\def\cD{{\cal D}}
+	\def\cE{{\cal E}}
+	\def\cF{{\cal F}}
+	\def\cG{{\cal G}}
+	\def\cH{{\cal H}}
 	
-	\def\cJ{{\mathcal J}}
-	\def\cK{{\mathcal K}}
-	\def\cL{{\mathcal L}}
-	\def\cM{{\mathcal M}}
-	\def\cN{{\mathcal N}}
-	\def\cO{{\mathcal O}}
-	\def\cP{{\mathcal P}}
-	\def\cQ{{\mathcal Q}}
-	\def\cR{{\mathcal R}}
-	\def\cS{{\mathcal S}}
-	\def\cT{{\mathcal T}}
-	\def\cU{{\mathcal U}}
-	\def\cV{{\mathcal V}}
-	\def\cW{{\mathcal W}}
-	\def\cX{{\mathcal X}}
-	\def\cY{{\mathcal Y}}
+	\def\cJ{{\cal J}}
+	\def\cK{{\cal K}}
+	\def\cL{{\cal L}}
+	\def\cM{{\cal M}}
+	\def\cN{{\cal N}}
+	\def\cO{{\cal O}}
+	\def\cP{{\cal P}}
+	\def\cQ{{\cal Q}}
+	\def\cR{{\cal R}}
+	\def\cS{{\cal S}}
+	\def\cT{{\cal T}}
+	\def\cU{{\cal U}}
+	\def\cV{{\cal V}}
+	\def\cW{{\cal W}}
+	\def\cX{{\cal X}}
+	\def\cY{{\cal Y}}
 	
 	
 	\def\Ic{{\overline{I}}}
