@@ -5,7 +5,7 @@
 % Math environments, get defined if they do not already exist
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{etoolbox}
-\usepackage{amsmath}
+\@ifpackageloaded{amsmath}{}{\usepackage{amsmath}}
 \@ifpackageloaded{amsthm}{}{\usepackage{amsthm}}
 \ifcsmacro{assumption}{}{
 	\newtheorem{assumption}{Assumption}[]
