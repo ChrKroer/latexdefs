@@ -119,8 +119,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Misc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{color}
-\@ifpackageloaded{color}{}{\usepackage{color}}
+\@ifpackageloaded{xcolor}{}{\usepackage[dvipsnames]{xcolor}}
 \newcommand{\todo}[1]{{\color{blue}[***  #1 ***]}}
 
 
@@ -128,10 +127,10 @@
 
 % From Fatma
 
-\def\crd{\color{red}}
-\def\cbl{\color{blue}}
-\def\cgr{\color{green}}
-\def\cmg{\color{magenta}}
+\def\cred{\color{red}}
+\def\cblue{\color{blue}}
+\def\cgreen{\color{ForestGreen}}
+\def\cmagenta{\color{magenta}}
 
 \newcommand{\be}{\begin{eqnarray}}
 \newcommand{\ee}[1]{\label{#1}\end{eqnarray}}
